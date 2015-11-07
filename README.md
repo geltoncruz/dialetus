@@ -19,7 +19,7 @@ First at all, install the dependencies to run this project.
 
 Run the following commands to download and install the application:
 
-    #clone this repository
+    # clone this repository
     $ git@github.com:jjaderg/dialetus.git
     $ cd dialetus
 
