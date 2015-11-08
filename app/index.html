@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="css/plugins.min.css">
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/plugins.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 </head>
 <body>
-   <h1>Seja bem Vindo ao Dialetus Project</h1>
-   <h2>Em breve uma página Sensacional nesse endereço! </h2>
-   <script src="js/all.min.js"></script>
+	<div id="content"></div>
+	<script src="js/all.min.js"></script>
+	<script type="text/babel">
+
+	var FilterCards = React.createClass({
+		render: function() {
+			var result = [];
+			this.props.cardObject.forEach(function(card) {
+				result.push(<Card nome={card.nome} origem={card.origem} significado={card.significado} />);
+			});
+			return (
+				<div>
+					{result}
+				</div>
+			);
+		} 
+	});
+
+		var Card = React.createClass({
+			render: function() {
+				return (
+					<div> 
+						<p>Card</p>
+						<p>Nome: {this.props.nome}</p>
+						<p>Origem: {this.props.origem}</p>
+						<p>significado: {this.props.significado}</p>
+						<hr />
+					</div>
+					);
+			}
+		});
+
+		var WelcomeMsg = React.createClass({
+			render: function() {
+				return (
+					<div>
+						<h1> Seja bem Vindo ao Projeto Dialetus </h1>
+						<h2> Em breve uma página Sensacional nesse Projeto </h2>
+					</div>
+					);
+			}
+		});
+
+		var Dialetus = React.createClass({
+			render: function() {
+				return (
+					<div>
+						<WelcomeMsg />
+						<FilterCards cardObject={this.props.cardObject} />
+					</div>
+				);
+			}
+		});
+
+		var CARDS = [
+		{nome: 'barril', origem:'Bahia', significado:'foda, legal demais', relacionados:['barriado']},
+		{nome: 'fragar', origem:'minas gerais', significado:'ver, observar', relacionados:['manja']},
+		{nome: 'Ó paí ó', origem:'Bahia', significado:'não sei'}
+		];
+
+		ReactDOM.render(
+			<Dialetus cardObject = {CARDS} />,
+			document.getElementById('content')
+			);
+
+	</script>
 </body>
 </html>
