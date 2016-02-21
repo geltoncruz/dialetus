@@ -1,7 +1,8 @@
-# Dialetus
+# Dialetus 
 
-Uma compilação dos dialetos mais variados e falados pelo Brasil.
+Uma compilação dos mais variados dialetos falados pelo Brasil.
 
+[![Build Status](https://travis-ci.org/jjaderg/dialetus.svg?branch=master)](https://travis-ci.org/jjaderg/dialetus)
 ---
 
 ## Como usar:
