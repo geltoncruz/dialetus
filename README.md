@@ -1,61 +1,29 @@
 # Dialetus
 
-A compilation of the most varied dialects spoken around Brazil.
-
-###### select language:
-[![](flag-br.png)](readme-pt-br)
-[![](flag-en.png)](README.md)
+Uma compilação dos dialetos mais variados e falados pelo Brasil.
 
 ---
 
-## Getting started:
+## Como usar:
 
-#### Installation
+#### Instalação
 
-First at all, install the dependencies to run this project.
+Antes de qualquer coisa, instale as dependências globais abaixo, para proseguir com a execução deste projeto:
 
-* [Node](https://nodejs.org/en/)
-* [Gulp](http://gulpjs.com)
+  * [Git](https://git-scm.com/downloads)
+  * [Node.js](https://nodejs.org/en/)
+  * [Gulp.js](http://gulpjs.com)
 
-Run the following commands to download and install the application:
+Agora, siga os comandos para clonar e executar o projeto:
 
-    # clone this repository
-    $ git@github.com:jjaderg/dialetus.git
-    $ cd dialetus
+```sh
+  # clone o repositório e navegue até seu diretório
+    $ git clone git@github.com:jjaderg/dialetus.git && cd dialetus
 
-    # install dependencies
+  # instale as dependências restantes
     $ npm install
 
-
-## Structure:
-
-    dialetus -
-      |-- build/
-          |-- css/
-                main.css
-          |-- js/
-                all.min.js
-          |-- img/
-
-      |-- app/    
-          |-- src/
-              |-- img
-              |-- js
-              |-- styl
-
-      .gitignore
-      gulpfile.js
-      package.json
-      README.md
-      readme-pt-br
-      flag-en
-      flag-br
-
-## Tasks:
-
-* `gulp`: Initialize watch for changes and a server (localhost:8080)
-* `gulp-deploy`: Build and Deploy project to github-pages
-
-## License:
-
-See the [LICENSE]() file.
+  # execute o projeto
+    $ gulp
+```
+Dialetus será inicializado no seu browser default :) .
