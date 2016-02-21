@@ -1,27 +1,27 @@
 {
   "name": "dialetus",
   "version": "1.0.0",
-  "description": "A compilation of the most varied dialects spoken around Brazil",
-  "main": "index.js",
+  "description": "Uma compilação dos dialetos mais variados e falados pelo Brasil.",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "jjaderg",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjaderg/dialetus.git"
+  },
+  "keywords": [
+    "Dialetus",
+    "Dialetos",
+    "React",
+    "Linguagem",
+    "do",
+    "Brasil"
+  ],
+  "author": "Jader Gomes (https://github.com/jjaderg)",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer-stylus": "^0.8.0",
-    "browser-sync": "^2.9.11",
-    "gulp": "^3.8.8",
-    "gulp-concat": "^2.4.1",
-    "gulp-gh-pages": "^0.5.4",
-    "gulp-imagemin": "^1.2.1",
-    "gulp-minify-html": "^0.1.6",
-    "gulp-plumber": "^1.0.1",
-    "gulp-stylus": "^2.0.0",
-    "gulp-uglify": "^1.0.1",
-    "gulp-util": "^3.0.7",
-    "jeet": "^6.1.2",
-    "kouto-swiss": "^0.11.13",
-    "rupture": "^0.6.1"
-  }
+  "bugs": {
+    "url": "https://github.com/jjaderg/dialetus/issues"
+  },
+  "homepage": "https://github.com/jjaderg/dialetus#readme"
 }
