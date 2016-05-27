@@ -1,0 +1,22 @@
+{
+  "name": "dialetus",
+  "version": "1.0.0",
+  "description": "Uma coletânea com diversas expressões regionais espalhadas por todo o Brasil.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjaderg/dialetus.git"
+  },
+  "author": "Jader Gomes (https://github.com/jjaderg)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jjaderg/dialetus/issues"
+  },
+  "homepage": "https://github.com/jjaderg/dialetus#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}
